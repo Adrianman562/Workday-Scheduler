@@ -1,0 +1,94 @@
+body {
+  font-family: 'Gill Sans', sans-serif;
+  font-size: 19px;
+  line-height: 1;
+}
+
+textarea {
+  background: transparent;
+  border: none;
+  resize: none;
+  color: #000000;
+  border-left: 1px solid black;
+  padding: 10px;
+}
+
+.jumbotron {
+  text-align: center;
+  background-color: transparent;
+  color: rgb(5, 39, 165);
+  border-radius: 0;
+  border-bottom: 10px solid rgb(205, 7, 156);
+}
+
+.description {
+  white-space: pre-wrap;
+}
+
+.time-block {
+  text-align: center;
+  border-radius: 15px;
+}
+
+.row {
+  white-space: pre-wrap;
+  height: 80px;
+  border-top: 1px solid rgb(5, 39, 165);
+}
+
+.hour {
+  background-color: #ffffff;
+  color: #4a0377;
+  border-top: 1px dashed #000000;
+}
+
+.past {
+  background-color: #cbcaca;
+  color: white;
+}
+
+.present {
+  background-color: #e71409;
+  color: white;
+}
+
+.future {
+  background-color: #06c806;
+  color: white;
+}
+
+.saveBtn {
+  border-left: 1px solid black;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: #03000b;
+  color: white;
+}
+
+.saveBtn i:hover {
+  font-size: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* OVERWRITE - MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px), screen and (max-width: 575px) {
+  .row {
+    height: auto;
+    margin-top: 20px;
+  }
+
+  .hour {
+    padding-right: 17%;
+  }
+
+  .saveBtn {
+    border: 0;
+    border-radius: 0.25rem;
+    height: 50px;
+  }
+
+  textarea {
+    min-height: 85px;
+    border: 0;
+  }
+}
